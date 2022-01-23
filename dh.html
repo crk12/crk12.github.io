@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--[if IE ]>
+  <style>
+    #siscript {display:none;}
+  </style>
+<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Cryptography in Grade 10: Core Ideas with Snap! and Unplugged</title>
+</head>
+
+<body>
+    <h1>Cryptography in Grade 10: Core Ideas with Snap! and Unplugged<br>- <a href="index.html">Auxiliary material</a> - </h1>
+
+    <p style="color:red"><i>This webpage requires a modern browser. <br>If you experience problems, you can find <a
+        href="static.html">a static page with all the materials here.</a></i></p>
+
+
+    <h2>Snap! app supporting Diffie-Hellman remote-unplugged</h2>
+
+    <p>We are self-hosting <i>Snap!</i> projects and environments due to a temporary issue with <i>Snap!</i> and
+        Javascript (which we used to build some of our blocks.)<br>
+        The original (English translation of the) projects are hosted <a
+            href="https://snap.berkeley.edu/user?user=cryptobigideas">here</a>.</p>
+
+    <p>The same app is used by both students of each pair.</p>
+
+
+    <script>
+        $(document).ready(function () {
+            if (navigator.userAgent.match(/msie|trident/i)) {
+                $('#siscript').hide();
+            }
+        });
+
+    </script>
+    <noscript>
+        <ul>
+            <li><a href="./snap/snap.html#run:../../cryptosnaps/h.xml&hideControls" target="_blank">Diffie-Hellman
+                    simulator with colors</a></li>
+            <ul>
+                <li><a href="./snap/snap.html#open:../../cryptosnaps/h.xml" target="_blank">with visible source
+                        code</a>&nbsp;<i>(for teachers)</i></li>
+            </ul>
+            <li><a href="./snap/snap.html#run:../../cryptosnaps/i.xml&hideControls" target="_blank">Diffie-Hellman
+                    simulator with colors and numbers</a></li>
+            <ul>
+                <li><a href="./snap/snap.html#open:../../cryptosnaps/i.xml" target="_blank">with visible source
+                        code</a>&nbsp;<i>(for teachers)</i></li>
+            </ul>
+        </ul>
+
+        <style>
+            #siscript {
+                display: none;
+            }
+        </style>
+    </noscript>
+
+    <div id="siscript">
+        <div class="row">
+            <div class="column" style="float:left; display:block">
+                <h2>Alice</h2>
+
+
+                <iframe allowfullscreen src="./snap/snap.html#run:../../cryptosnaps/h.xml&hideControls" width="520"
+                    height="390" frameBorder=0> Snap! frame not loaded
+                    correctly.</iframe>
+                </iframe>
+            </div>
+            <div class="column" style="float:left; display:block">
+                <h2>Bob</h2>
+                <iframe allowfullscreen src="./snap/snap.html#run:../../cryptosnaps/h.xml&hideControls" width="520"
+                    height="390" frameBorder=0> Snap! frame not loaded
+                    correctly.</iframe>
+                </iframe>
+            </div>
+        </div>
+
+
+        <div style="float:left; display:block">
+            <h3>All the Diffie-Hellman Snap! projects</h3>
+            <ul>
+                <li><a href="./snap/snap.html#run:../../cryptosnaps/h.xml&hideControls" target="_blank">Diffie-Hellman
+                        simulator with colors</a></li>
+                <ul>
+                    <li><a href="./snap/snap.html#open:../../cryptosnaps/h.xml" target="_blank">with visible source
+                            code</a>&nbsp;<i>(for teachers)</i></li>
+                </ul>
+                <li><a href="./snap/snap.html#run:../../cryptosnaps/i.xml&hideControls" target="_blank">Diffie-Hellman
+                        simulator with colors and numbers</a></li>
+                <ul>
+                    <li><a href="./snap/snap.html#open:../../cryptosnaps/i.xml" target="_blank">with visible source
+                            code</a>&nbsp;<i>(for teachers)</i></li>
+                </ul>
+            </ul>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--[if IE ]>
+  <style>
+    #siscript {display:none;}
+  </style>
+<![endif]-->
+
+
+<head>
+    <title>Cryptography in Grade 10: Core Ideas with Snap! and Unplugged</title>
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        @import url('https://themes.googleusercontent.com/fonts/css?kit=p4ZryW8dvr7pPcH3lYzSon-dlLNU2XE6YYfhA05xkRg');
+
+        .lst-kix_list_4-1>li {
+            counter-increment: lst-ctn-kix_list_4-1
+        }
+
+        ul.lst-kix_list_1-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-0.start {
+            counter-reset: lst-ctn-kix_list_9-0 0
+        }
+
+        ol.lst-kix_list_3-1.start {
+            counter-reset: lst-ctn-kix_list_3-1 0
+        }
+
+        .lst-kix_list_5-0>li {
+            counter-increment: lst-ctn-kix_list_5-0
+        }
+
+        .lst-kix_list_9-0>li {
+            counter-increment: lst-ctn-kix_list_9-0
+        }
+
+        ul.lst-kix_list_1-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_1-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-6.start {
+            counter-reset: lst-ctn-kix_list_9-6 0
+        }
+
+        ol.lst-kix_list_5-3.start {
+            counter-reset: lst-ctn-kix_list_5-3 0
+        }
+
+        .lst-kix_list_4-3>li {
+            counter-increment: lst-ctn-kix_list_4-3
+        }
+
+        ol.lst-kix_list_4-5.start {
+            counter-reset: lst-ctn-kix_list_4-5 0
+        }
+
+        .lst-kix_list_5-2>li {
+            counter-increment: lst-ctn-kix_list_5-2
+        }
+
+        .lst-kix_list_9-2>li {
+            counter-increment: lst-ctn-kix_list_9-2
+        }
+
+        .lst-kix_list_5-0>li:before {
+            content: ""counter(lst-ctn-kix_list_5-0, decimal) ". "
+        }
+
+        .lst-kix_list_5-4>li {
+            counter-increment: lst-ctn-kix_list_5-4
+        }
+
+        .lst-kix_list_5-3>li:before {
+            content: ""counter(lst-ctn-kix_list_5-3, decimal) ". "
+        }
+
+        ol.lst-kix_list_9-5.start {
+            counter-reset: lst-ctn-kix_list_9-5 0
+        }
+
+        .lst-kix_list_5-2>li:before {
+            content: ""counter(lst-ctn-kix_list_5-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_5-1>li:before {
+            content: ""counter(lst-ctn-kix_list_5-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_5-7>li:before {
+            content: ""counter(lst-ctn-kix_list_5-7, lower-latin) ". "
+        }
+
+        ul.lst-kix_list_8-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-6>li:before {
+            content: ""counter(lst-ctn-kix_list_5-6, decimal) ". "
+        }
+
+        .lst-kix_list_5-8>li:before {
+            content: ""counter(lst-ctn-kix_list_5-8, lower-roman) ". "
+        }
+
+        ul.lst-kix_list_8-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_9-4>li {
+            counter-increment: lst-ctn-kix_list_9-4
+        }
+
+        .lst-kix_list_5-4>li:before {
+            content: ""counter(lst-ctn-kix_list_5-4, lower-latin) ". "
+        }
+
+        .lst-kix_list_5-5>li:before {
+            content: ""counter(lst-ctn-kix_list_5-5, lower-roman) ". "
+        }
+
+        ul.lst-kix_list_8-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_8-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_6-1>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_6-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_6-0>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_6-4>li:before {
+            content: "\0025cb  "
+        }
+
+        ol.lst-kix_list_4-0.start {
+            counter-reset: lst-ctn-kix_list_4-0 0
+        }
+
+        .lst-kix_list_6-2>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_6-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_6-5>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_6-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_6-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_2-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_7-4>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_7-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_2-5>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_7-2>li:before {
+            content: "\0025a0  "
+        }
+
+        ol.lst-kix_list_9-4.start {
+            counter-reset: lst-ctn-kix_list_9-4 0
+        }
+
+        ul.lst-kix_list_3-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_3-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-6.start {
+            counter-reset: lst-ctn-kix_list_4-6 0
+        }
+
+        ol.lst-kix_list_9-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_10-1>li:before {
+            content: "\0025cb  "
+        }
+
+        ol.lst-kix_list_9-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_3-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-7>li {
+            counter-increment: lst-ctn-kix_list_5-7
+        }
+
+        ol.lst-kix_list_9-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-8>li:before {
+            content: "\0025a0  "
+        }
+
+        ol.lst-kix_list_9-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_3-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-3.start {
+            counter-reset: lst-ctn-kix_list_4-3 0
+        }
+
+        ul.lst-kix_list_3-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_4-7>li {
+            counter-increment: lst-ctn-kix_list_4-7
+        }
+
+        ol.lst-kix_list_9-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_3-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-1 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_3-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_3-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_10-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_10-5>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_9-8>li {
+            counter-increment: lst-ctn-kix_list_9-8
+        }
+
+        .lst-kix_list_10-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_4-1>li:before {
+            content: ""counter(lst-ctn-kix_list_4-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_9-2>li:before {
+            content: ""counter(lst-ctn-kix_list_9-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_4-3>li:before {
+            content: ""counter(lst-ctn-kix_list_4-3, decimal) ". "
+        }
+
+        .lst-kix_list_4-5>li:before {
+            content: ""counter(lst-ctn-kix_list_4-5, lower-roman) ". "
+        }
+
+        ol.lst-kix_list_5-7.start {
+            counter-reset: lst-ctn-kix_list_5-7 0
+        }
+
+        .lst-kix_list_5-5>li {
+            counter-increment: lst-ctn-kix_list_5-5
+        }
+
+        .lst-kix_list_9-0>li:before {
+            content: ""counter(lst-ctn-kix_list_9-0, decimal) ". "
+        }
+
+        ol.lst-kix_list_4-4.start {
+            counter-reset: lst-ctn-kix_list_4-4 0
+        }
+
+        ol.lst-kix_list_9-2.start {
+            counter-reset: lst-ctn-kix_list_9-2 0
+        }
+
+        .lst-kix_list_9-6>li:before {
+            content: ""counter(lst-ctn-kix_list_9-6, decimal) ". "
+        }
+
+        .lst-kix_list_9-3>li {
+            counter-increment: lst-ctn-kix_list_9-3
+        }
+
+        .lst-kix_list_9-4>li:before {
+            content: ""counter(lst-ctn-kix_list_9-4, lower-latin) ". "
+        }
+
+        ul.lst-kix_list_2-8 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_2-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_2-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_2-0 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_2-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_9-8>li:before {
+            content: ""counter(lst-ctn-kix_list_9-8, lower-roman) ". "
+        }
+
+        ul.lst-kix_list_2-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-1>li:before {
+            content: "\0025cb  "
+        }
+
+        ul.lst-kix_list_2-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_2-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_2-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_10-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-3>li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_list_10-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_4-8>li {
+            counter-increment: lst-ctn-kix_list_4-8
+        }
+
+        ul.lst-kix_list_10-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-7>li:before {
+            content: "\0025cb  "
+        }
+
+        ol.lst-kix_list_5-8.start {
+            counter-reset: lst-ctn-kix_list_5-8 0
+        }
+
+        ul.lst-kix_list_10-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_10-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_10-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_10-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-5>li:before {
+            content: "\0025a0  "
+        }
+
+        ul.lst-kix_list_10-2 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_10-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-1.start {
+            counter-reset: lst-ctn-kix_list_9-1 0
+        }
+
+        .lst-kix_list_5-6>li {
+            counter-increment: lst-ctn-kix_list_5-6
+        }
+
+        .lst-kix_list_2-1>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_2-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_4-2>li {
+            counter-increment: lst-ctn-kix_list_4-2
+        }
+
+        ol.lst-kix_list_3-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_3-1>li {
+            counter-increment: lst-ctn-kix_list_3-1
+        }
+
+        .lst-kix_list_5-1>li {
+            counter-increment: lst-ctn-kix_list_5-1
+        }
+
+        .lst-kix_list_9-1>li {
+            counter-increment: lst-ctn-kix_list_9-1
+        }
+
+        .lst-kix_list_3-0>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_3-1>li:before {
+            content: ""counter(lst-ctn-kix_list_3-1, lower-latin) ". "
+        }
+
+        .lst-kix_list_3-2>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_8-1>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_4-0>li {
+            counter-increment: lst-ctn-kix_list_4-0
+        }
+
+        .lst-kix_list_8-2>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_3-5>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_3-4>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_3-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_8-0>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_8-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_3-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_8-5>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_8-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_8-3>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_3-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_3-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_8-4>li:before {
+            content: "\0025cb  "
+        }
+
+        ol.lst-kix_list_5-0.start {
+            counter-reset: lst-ctn-kix_list_5-0 0
+        }
+
+        ol.lst-kix_list_4-2.start {
+            counter-reset: lst-ctn-kix_list_4-2 0
+        }
+
+        ol.lst-kix_list_9-3.start {
+            counter-reset: lst-ctn-kix_list_9-3 0
+        }
+
+        .lst-kix_list_8-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_4-4>li {
+            counter-increment: lst-ctn-kix_list_4-4
+        }
+
+        .lst-kix_list_4-8>li:before {
+            content: ""counter(lst-ctn-kix_list_4-8, lower-roman) ". "
+        }
+
+        .lst-kix_list_4-7>li:before {
+            content: ""counter(lst-ctn-kix_list_4-7, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_5-6.start {
+            counter-reset: lst-ctn-kix_list_5-6 0
+        }
+
+        ol.lst-kix_list_4-1.start {
+            counter-reset: lst-ctn-kix_list_4-1 0
+        }
+
+        ol.lst-kix_list_4-8.start {
+            counter-reset: lst-ctn-kix_list_4-8 0
+        }
+
+        ol.lst-kix_list_5-5.start {
+            counter-reset: lst-ctn-kix_list_5-5 0
+        }
+
+        .lst-kix_list_7-0>li:before {
+            content: "\0025cf  "
+        }
+
+        ol.lst-kix_list_4-7.start {
+            counter-reset: lst-ctn-kix_list_4-7 0
+        }
+
+        ol.lst-kix_list_5-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-6>li:before {
+            content: "\0025cf  "
+        }
+
+        ol.lst-kix_list_5-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_9-7.start {
+            counter-reset: lst-ctn-kix_list_9-7 0
+        }
+
+        ol.lst-kix_list_5-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_2-4>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_2-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_7-1>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_7-5>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_9-6>li {
+            counter-increment: lst-ctn-kix_list_9-6
+        }
+
+        ol.lst-kix_list_5-4.start {
+            counter-reset: lst-ctn-kix_list_5-4 0
+        }
+
+        .lst-kix_list_7-3>li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_list_7-5 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_10-0>li:before {
+            content: "\0025cf  "
+        }
+
+        ul.lst-kix_list_7-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_7-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_9-7>li {
+            counter-increment: lst-ctn-kix_list_9-7
+        }
+
+        ul.lst-kix_list_7-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-1.start {
+            counter-reset: lst-ctn-kix_list_5-1 0
+        }
+
+        ul.lst-kix_list_7-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_7-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-3 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_7-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_7-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_5-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_7-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_7-7>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_9-5>li {
+            counter-increment: lst-ctn-kix_list_9-5
+        }
+
+        .lst-kix_list_5-8>li {
+            counter-increment: lst-ctn-kix_list_5-8
+        }
+
+        .lst-kix_list_10-4>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_10-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_4-0>li:before {
+            content: ""counter(lst-ctn-kix_list_4-0, decimal) ". "
+        }
+
+        .lst-kix_list_10-2>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_4-6>li {
+            counter-increment: lst-ctn-kix_list_4-6
+        }
+
+        .lst-kix_list_4-4>li:before {
+            content: ""counter(lst-ctn-kix_list_4-4, lower-latin) ". "
+        }
+
+        .lst-kix_list_4-2>li:before {
+            content: ""counter(lst-ctn-kix_list_4-2, lower-roman) ". "
+        }
+
+        .lst-kix_list_4-6>li:before {
+            content: ""counter(lst-ctn-kix_list_4-6, decimal) ". "
+        }
+
+        .lst-kix_list_9-3>li:before {
+            content: ""counter(lst-ctn-kix_list_9-3, decimal) ". "
+        }
+
+        .lst-kix_list_10-6>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_9-1>li:before {
+            content: ""counter(lst-ctn-kix_list_9-1, lower-latin) ". "
+        }
+
+        ol.lst-kix_list_4-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_9-7>li:before {
+            content: ""counter(lst-ctn-kix_list_9-7, lower-latin) ". "
+        }
+
+        .lst-kix_list_9-5>li:before {
+            content: ""counter(lst-ctn-kix_list_9-5, lower-roman) ". "
+        }
+
+        ul.lst-kix_list_6-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-7 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_5-3>li {
+            counter-increment: lst-ctn-kix_list_5-3
+        }
+
+        ul.lst-kix_list_6-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-0>li:before {
+            content: "\0025cf  "
+        }
+
+        ol.lst-kix_list_4-4 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-5 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-3 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-2>li:before {
+            content: "\0025a0  "
+        }
+
+        ol.lst-kix_list_4-6 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_list_4-7 {
+            list-style-type: none
+        }
+
+        ul.lst-kix_list_6-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_list_1-4>li:before {
+            content: "\0025cb  "
+        }
+
+        .lst-kix_list_1-6>li:before {
+            content: "\0025cf  "
+        }
+
+        li.li-bullet-0:before {
+            margin-left: -18pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 18pt
+        }
+
+        .lst-kix_list_2-0>li:before {
+            content: "\0025cf  "
+        }
+
+        .lst-kix_list_4-5>li {
+            counter-increment: lst-ctn-kix_list_4-5
+        }
+
+        ol.lst-kix_list_9-8.start {
+            counter-reset: lst-ctn-kix_list_9-8 0
+        }
+
+        .lst-kix_list_1-8>li:before {
+            content: "\0025a0  "
+        }
+
+        .lst-kix_list_2-2>li:before {
+            content: "\0025a0  "
+        }
+
+        ol.lst-kix_list_5-2.start {
+            counter-reset: lst-ctn-kix_list_5-2 0
+        }
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c0 {
+            margin-left: 36pt;
+            padding-top: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.1500000000000001;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c13 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c18 {
+            padding-top: 0pt;
+            padding-bottom: 12pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c20 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 10pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c19 {
+            color: #073763;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 26pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c14 {
+            padding-top: 0pt;
+            padding-bottom: 6pt;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c6 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c15 {
+            color: #1c4587;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c22 {
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c2 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.1500000000000001;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c17 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.1500000000000001;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c21 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c4 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            text-decoration: line-through
+        }
+
+        .c10 {
+            background-color: #f7fbff;
+            max-width: 469.5pt;
+            padding: 54pt 54pt 72pt 72pt
+        }
+
+        .c3 {
+            font-weight: 400;
+            font-family: "Arimo"
+        }
+
+        .c16 {
+            margin-left: 72pt;
+            padding-left: 0pt
+        }
+
+        .c8 {
+            padding: 0;
+            margin: 0
+        }
+
+        .c24 {
+            vertical-align: super;
+            font-weight: 700
+        }
+
+        .c9 {
+            font-weight: 400;
+            font-family: "Roboto Mono"
+        }
+
+        .c11 {
+            font-size: 15pt
+        }
+
+        .c1 {
+            color: #999999
+        }
+
+        .c23 {
+            font-style: italic
+        }
+
+        .c5 {
+            color: #0000ff
+        }
+
+        .c12 {
+            color: #0e101a
+        }
+
+        .c7 {
+            height: 11pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.1500000000000001;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .normale {
+            all: revert
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cryptography in Grade 10: Core Ideas with Snap! and Unplugged<br>- <a href="index.html">Auxiliary material</a> - </h1>
+
+    <p style="color:red"><i>This webpage requires a modern browser. <br>If you experience problems, you can find <a
+        href="static.html">a static page with all the materials here.</a></i></p>
+
+    <h2 class="normale">Final assessment narrative</h2>
+
+    <script>
+        $(document).ready(function () {
+            if (navigator.userAgent.match(/msie|trident/i)) {
+                $('#siscript').hide();
+            }
+        });
+
+    </script>
+
+    <noscript>
+        <ul>
+            <li><a href="https://docs.google.com/document/d/e/2PACX-1vTlejtxHXz0HgxsunswkfzCFEIPd1jBsOP4SlbG_ga_JA8KjQ2RRbVan0cGKEZyUJBWrcBmrzSvzEaX/pub"
+                    target="_blank">English translation of the narrative we used for the final assessment</a></li>
+        </ul>
+
+        <style>
+            #siscript {
+                display: none;
+            }
+        </style>
+    </noscript>
+
+    <hr>
+    <div id="siscript">
+        <p class="c13 title" id="h.gjdgxs"><span class="c19">Our Cryptography Path</span></p>
+        <p class="c18 subtitle" id="h.30j0zll"><span class="c11 c15">What we learned in the Cryptography course for
+                <br>the
+                Mathematical Lyceum</span></p>
+        <h1 class="c14" id="h.1fob9te"><span class="c23">Fundamentals of Cryptography </span><span><br></span><span
+                class="c11">with </span><span class="c11 c1">[ </span><span class="c4 c11 c1">incorrect</span><span
+                class="c11 c1">&nbsp;| </span><span class="c11 c5">correct</span><span class="c11 c1">&nbsp;]
+            </span><span class="c11 c21">choices</span></h1>
+        <p class="c2"><span class="c6">Secret communication: altering an unencrypted (plaintext) message so that, even
+                if
+                intercepted by someone other than the legitimate recipient, it is not understood.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">A cryptosystem consists of:</span></p>
+        <ul class="c8 lst-kix_list_1-0 start">
+            <li class="c0 li-bullet-0"><span class="c6">plaintext messages;</span></li>
+            <li class="c0 li-bullet-0"><span class="c6">encrypted messages;</span></li>
+            <li class="c0 li-bullet-0"><span class="c1">[ </span><span class="c4 c1">encryption</span><span
+                    class="c1">&nbsp;</span><span class="c1">| </span><span class="c5">decryption </span><span
+                    class="c1">]
+                </span><span>algorithm </span><span class="c3">&rarr; a sequence of steps to execute to go from the
+                    encrypted message to the plaintext message;</span></li>
+            <li class="c0 li-bullet-0"><span class="c1">[ </span><span class="c5">encryption </span><span class="c1">|
+                </span><span class="c4 c1">decryption </span><span class="c1">] </span><span>algorithm </span><span
+                    class="c3">&rarr; a sequence of steps to execute to go from the plaintext message to the encrypted
+                    message;</span></li>
+            <li class="c0 li-bullet-0"><span class="c3">key(s) &rarr; secret(s) known only to the sender and the
+                    receiver
+                    that, when inserted into the encryption and decryption algorithm, allow[s] the message to be
+                    encrypted
+                    and decrypted.</span></li>
+        </ul>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">Two simple encryption mechanisms are transposition (swapping the letters&rsquo;
+                position) and substitution (substituting each letter with another one).</span></p>
+        <p class="c2"><span>A simple example of a </span><span class="c1">[ </span><span class="c4 c1">substitution
+            </span><span class="c1">| </span><span class="c5">transposition </span><span class="c1">] </span><span
+                class="c6">cipher is one that chooses a permutation (i.e., a rule that associates an initial position
+                with a
+                new, different, final position) and applies it to the message, thus &ldquo;mixing&rdquo; the letters.
+                The
+                recipient applies the permutation rule in reverse and so goes back to the plaintext message.</span></p>
+        <p class="c2"><span class="c6">This system is easily attacked by searching for the anagrams of the encrypted
+                message.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>A famous example of </span><span class="c1">[ </span><span class="c5">substitution
+            </span><span class="c1">| </span><span class="c4 c1">transposition </span><span class="c1">] </span><span
+                class="c6">cipher is the Caesar cipher.</span></p>
+        <ul class="c8 lst-kix_list_3-0 start">
+            <li class="c0 li-bullet-0"><span>Plaintext messages: all possible sequences of the alphabet&rsquo;s
+                    characters.
+                </span><span
+                    class="c9">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^{|</span><span
+                    class="c9">}~</span><span
+                    class="c9">0123456789&agrave;&egrave;&eacute;&igrave;&ograve;&ugrave;</span>
+            </li>
+            <li class="c0 li-bullet-0"><span>Key: a number K between 1 and </span><span class="c1">[ </span><span
+                    class="c4 c1">the length of the message</span><span class="c1">&nbsp;| </span><span class="c5">the
+                    length of the alphabet </span><span class="c1">] </span><span class="c6">(98 in our
+                    scenario).</span>
+            </li>
+            <li class="c0 li-bullet-0"><span class="c6">Encryption algorithm:</span></li>
+        </ul>
+        <ol class="c8 lst-kix_list_3-1 start" start="1">
+            <li class="c2 c16 li-bullet-0"><span class="c3">for each letter of the message, identify its position in the
+                    alphabet (a&rarr;0, b&rarr;1, etc.);</span></li>
+            <li class="c2 c16 li-bullet-0"><span class="c6">add the number K to each position;</span></li>
+            <li class="c2 c16 li-bullet-0"><span class="c6">the encrypted message is the one made of the letters in the
+                    positions calculated in point b.</span></li>
+        </ol>
+        <ul class="c8 lst-kix_list_3-0">
+            <li class="c0 li-bullet-0"><span class="c6">Decryption algorithm:</span></li>
+        </ul>
+        <ol class="c8 lst-kix_list_3-1 start" start="1">
+            <li class="c2 c16 li-bullet-0"><span>for each letter of the encrypted message, </span><span
+                    class="c3">identify</span><span class="c6">&nbsp;its position in the alphabet;</span></li>
+            <li class="c2 c16 li-bullet-0"><span class="c6">subtract the number K from each position;</span></li>
+            <li class="c2 c16 li-bullet-0"><span class="c6">the plaintext message is the one made of the letters in the
+                    positions calculated in point b.</span></li>
+        </ol>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">Two weaknesses of the Caesar cipher follow here.</span></p>
+        <ol class="c8 lst-kix_list_9-0 start" start="1">
+            <li class="c0 li-bullet-0"><span>With enough time and accuracy, or using a computer, it is easy to
+                    &ldquo;try to
+                    decipher the encrypted message with </span><span class="c1">[ </span><span class="c5">all the keys
+                </span><span class="c1">| </span><span class="c4 c1">some conveniently chosen keys</span><span
+                    class="c1">&nbsp;]</span><span>&rdquo;, i.e., to perform a brute-force attack. Indeed, the number of
+                    keys (and therefore the number of possible encryptions for each message) corresponds just to the
+                    length
+                    of the </span><span class="c1">[ </span><span class="c5">alphabet </span><span class="c1">|
+                </span><span class="c4 c1">message</span><span class="c1">&nbsp;]</span><span class="c6">.</span></li>
+            <li class="c0 li-bullet-0"><span>In each language, different letters occur with different frequencies. Since
+                    in
+                    the Caesar cipher, given a key K, a letter is always encoded with </span><span class="c1">[
+                </span><span class="c5">the same letter </span><span class="c1">| </span><span class="c4 c1">a different
+                    letter</span><span class="c1">&nbsp;] </span><span class="c6">(pos+K), letters in the ciphertext
+                    maintain the frequencies of their corresponding letters in the plaintext message. It is easy to make
+                    assumptions about what the key K is when the average frequencies in the language of the message are
+                    known.</span></li>
+        </ol>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">The Caesar cipher&#39;s weaknesses are shared by all the classical substitution
+                ciphers, even the much more complex ones. Therefore we should:</span></p>
+        <ol class="c8 lst-kix_list_5-0 start" start="1">
+            <li class="c0 li-bullet-0"><span class="c1">[ </span><span class="c5">increase </span><span class="c1">|
+                </span><span class="c4 c1">decrease</span><span class="c1">&nbsp;] </span><span class="c6">the number of
+                    possible encryptions;</span></li>
+            <li class="c0 li-bullet-0"><span>make the encrypted message </span><span class="c1">[ </span><span
+                    class="c4 c1">show</span><span class="c1">&nbsp;| </span><span class="c5">hide </span><span
+                    class="c1">]
+                </span><span>all the information in the plaintext message; among the information that the encrypted
+                    message
+                    must </span><span class="c1">[ </span><span class="c5">hide </span><span class="c1">| </span><span
+                    class="c4 c1">show</span><span class="c1">&nbsp;] </span><span class="c6">is the frequency of the
+                    plaintext message&rsquo;s letters.</span></li>
+        </ol>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>The </span><span class="c1">[ </span><span class="c5">One-time pad </span><span class="c1">|
+            </span><span class="c4 c1">Diffie-Hellman </span><span class="c1">] </span><span class="c6">cryptosystem can
+                be
+                a way to do so.</span></p>
+        <p class="c2"><span>Given a message M of length L, a key K is generated, consisting of a random sequence of
+            </span><span class="c1">[ </span><span class="c5">L </span><span class="c1">| </span><span
+                class="c4 c1">K</span><span class="c1">&nbsp;] </span><span class="c6">numbers. Then, the first letter
+                of M
+                is encrypted with the first number of K, the second letter of M with the second number of K, and so
+                on.</span></p>
+        <p class="c2"><span>In this cryptosystem, it is important to </span><span class="c1">[ </span><span
+                class="c4 c1">maintain</span><span class="c1">&nbsp;| </span><span class="c5">change </span><span
+                class="c1">] </span><span class="c6">the key every time, to avoid that an attacker, having the
+                possibility
+                to use the system to encrypt messages of his choice, could deduce the secret key, knowing the messages
+                he
+                had encrypted and the corresponding encrypted messages.</span></p>
+        <p class="c2"><span>This system, which we have seen as the application of the Caesar cipher with a different key
+                for
+                each letter of the message, </span><span>in reality</span><span class="c6">&nbsp;is realized with the
+                logical operation XOR between the bits of the plaintext message and the corresponding bits of the key.
+                XOR
+                is a very fast operation for computers since it is done at the hardware level through a simple
+                electronic
+                circuit.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">OTP is not attackable by brute force for two reasons.</span></p>
+        <ol class="c8 lst-kix_list_4-0 start" start="1">
+            <li class="c0 li-bullet-0"><span>The number of possible encryptions is huge. If A is the length of the
+                    alphabet
+                    (e.g., 98) and L is the length of the message, the number of possible ciphers is </span><span
+                    class="c1">[ </span><span class="c4 c1">A&times;L</span><span class="c1">&nbsp;| </span><span
+                    class="c5">A</span><span class="c5 c24">L </span><span class="c1">]</span><span>. Even for messages
+                    of
+                    only a few dozen characters, we reach numbers </span><span class="c1">[ </span><span
+                    class="c5">unmanageable </span><span class="c1">| </span><span class="c4 c1">manageable</span><span
+                    class="c1">&nbsp;] </span><span class="c6">for any computer (even in the future).</span></li>
+            <li class="c0 li-bullet-0"><span>Since each character of the plaintext message </span><span class="c1">[
+                </span><span class="c5">has </span><span class="c1">| </span><span class="c4 c1">does not
+                    have</span><span class="c1">&nbsp;] </span><span>an equal probability of being encrypted with any
+                    key, given an encrypted
+                    message of length L, each sequence of L letters has </span><span class="c1">[ </span><span
+                    class="c5">the same </span><span class="c1">| </span><span class="c4 c1">different</span><span
+                    class="c1">&nbsp;] </span><span>probability of being the corresponding plaintext message. Therefore,
+                    it
+                    is </span><span class="c1">[ </span><span class="c4 c1">possible</span><span class="c1">&nbsp;|
+                </span><span class="c5">impossible </span><span class="c1">]</span><span class="c6">&nbsp;to determine
+                    which
+                    is the original one among all the plaintext messages of length L.</span></li>
+        </ol>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>OTP </span><span class="c1">[ </span><span class="c4 c1">is attackable</span><span
+                class="c1">&nbsp;| </span><span class="c5">is not attackable </span><span class="c1">] </span><span>with
+                frequencies, because the randomness of the key &ldquo;flattens&rdquo; the frequencies of the letters: in
+                sufficiently long texts, each letter will be sooner or later encoded with all possible keys. So in the
+                encrypted, message the characters will have (basically) the same frequency, </span><span class="c1">[
+            </span><span class="c4 c1">revealing information</span><span class="c1">&nbsp;| </span><span class="c5">not
+                revealing any information </span><span class="c1">] </span><span class="c6">on the corresponding letters
+                of
+                the plaintext message.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>So OTP achieves so-called </span><span class="c1">[ </span><span class="c5">&ldquo;perfect
+                security&rdquo; </span><span class="c1">| </span><span class="c4 c1">&ldquo;computational
+                security&rdquo;</span><span class="c1 c22">&nbsp;]. </span></p>
+        <p class="c2"><span class="c6">OTP...</span></p>
+        <ul class="c8 lst-kix_list_6-0 start">
+            <li class="c0 li-bullet-0"><span class="c1">[ </span><span class="c4 c1">does not require</span><span
+                    class="c1">&nbsp;| </span><span class="c5">requires</span><span class="c1">&nbsp;] </span><span
+                    class="c6">changing the key every time;</span></li>
+            <li class="c0 li-bullet-0"><span>it is </span><span class="c1">[ </span><span class="c5">difficult
+                </span><span class="c1">| </span><span class="c4 c1">easy</span><span class="c1">&nbsp;]</span><span
+                    class="c6">&nbsp;to generate random keys, even with computers;</span></li>
+            <li class="c0 li-bullet-0"><span class="c6">it is expensive to use keys as long as the messages to be
+                    encrypted
+                    (it doubles the amount of data to be exchanged);</span></li>
+            <li class="c0 li-bullet-0"><span class="c1">[ </span><span class="c5">requires </span><span class="c1">|
+                </span><span class="c4 c1">does not require</span><span class="c1">&nbsp;]</span><span
+                    class="c6">&nbsp;securely exchanging secret keys before being able to communicate.</span></li>
+        </ul>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>Therefore, modern systems are not based on &ldquo;perfect security,&rdquo; but on so-called
+                &ldquo;computational security.&rdquo; Although it is not possible to prove mathematically that a system
+                is
+                perfectly secure, we &ldquo;settle&rdquo; for systems for which security is guaranteed by the fact that
+                -
+                although </span><span class="c1">[</span><span class="c5">&nbsp;</span><span class="c4 c1">not
+                being</span><span class="c1">&nbsp;| </span><span class="c5">being </span><span class="c1">]
+            </span><span class="c6">theoretically attackable - attacking the system would require a power (greater than
+                that of a
+                supernova explosion) and a computational time (greater than the age of the universe) too big for such an
+                attack to be realistic.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">Nowadays, there are two kinds of these computationally secure systems.</span></p>
+        <ul class="c8 lst-kix_list_2-0 start">
+            <li class="c0 li-bullet-0"><span>&ldquo;Secret-key&rdquo; systems (also called &ldquo;symmetric&rdquo;
+                    because
+                    sender and receiver <br></span><span class="c1">[ </span><span class="c5">share the same key
+                </span><span class="c1">| </span><span class="c4 c1">use different keys</span><span
+                    class="c1">&nbsp;]</span><span class="c6">&nbsp;).</span></li>
+            <li class="c0 li-bullet-0"><span>&ldquo;Public-key&rdquo; systems (also called &ldquo;asymmetric&rdquo;
+                    because
+                    sender and receiver <br></span><span class="c1">[ </span><span class="c4 c1">share the same
+                    key</span><span class="c1">&nbsp;| </span><span class="c5">use different keys </span><span
+                    class="c1">]
+                </span><span class="c6">).</span></li>
+        </ul>
+        <p class="c2"><span class="c6">&ldquo;Secret-key&rdquo; systems are the heirs to the substitution and
+                transposition
+                ciphers used throughout history, but they work on bits (the binary digits with which messages are
+                represented in the computer) instead of letters.</span></p>
+        <p class="c2"><span class="c6">These bits are swapped, shifted, replaced, and mixed with the key to generate
+                confusion (hiding the relationship between the plaintext and the key) and diffusion (hiding the
+                relationship
+                between the plaintext and the ciphertext).</span></p>
+        <p class="c2"><span class="c6">Such systems are very efficient because they use operations such as
+                substitutions,
+                exchanges, XOR between bits, which are very fast to perform on electronic circuits.</span></p>
+        <p class="c2"><span class="c6">Today, the most widely used cryptosystem is AES, which uses 256-bits long keys.
+                AES
+                is an evolution of Lucifer/DES.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>However, these systems suffer from the problem of </span><span class="c1">[ </span><span
+                class="c5">key distribution </span><span class="c1">| </span><span class="c1 c4">communication
+                security</span><span class="c1">&nbsp;]</span><span>. It is necessary, for each conversation between two
+                parties, to securely exchange a secret key to share, and use it to secure the communication. In a
+                globalized
+                way, it would be unthinkable </span><span class="c1">[ </span><span class="c5">for these exchanges to
+                take
+                place &ldquo;in person&rdquo; </span><span class="c1">| </span><span class="c4 c1">to guarantee the
+                security
+                of communications</span><span class="c1">&nbsp;]</span><span class="c6">.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>The </span><span class="c1">[ </span><span class="c5">Diffie-Hellman key exchange protocol
+            </span><span class="c1">| </span><span class="c4 c1">AES cryptosystem</span><span class="c1">&nbsp;]
+            </span><span class="c6">solved this problem.</span></p>
+        <p class="c2"><span>With this system, it is possible to generate a key (in our metaphor, a color) shared and
+            </span><span class="c1">[ </span><span class="c4 c1">public</span><span class="c1">&nbsp;| </span><span
+                class="c5">secret </span><span class="c1">] </span><span>between two people, communicating over
+            </span><span class="c1">[ </span><span class="c5">an insecure public channel (accessible by all)
+            </span><span class="c1">| </span><span class="c4 c1">a private, secure channel (accessible only to the two
+                parties)</span><span class="c1">&nbsp;]</span><span class="c6">.</span></p>
+        <p class="c2"><span class="c6">Mathematical tools such as modular arithmetic, power and its inversion, prime and
+                coprime numbers are the basis of how this system works.</span></p>
+        <p class="c2"><span>The system&#39;s functioning is based on the fact that private information </span><span
+                class="c1">[ can | </span><span class="c5">cannot</span><span class="c1">&nbsp;]</span><span
+                class="c6">&nbsp;be traced based only on publicly exchanged information.</span></p>
+        <p class="c2"><span>This is a recent discovery (1976) and of enormous worldwide scope because it allows you to
+                initiate private communications with anyone, anywhere in the world, </span><span class="c1">[
+            </span><span class="c4 c1">exchanging</span><span class="c1">&nbsp;| </span><span class="c5">without having
+                first to
+                exchange </span><span class="c1">] </span><span class="c6">a shared secret key.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">The security of this key exchange is not perfect (as the security of OTP
+                was).</span>
+        </p>
+        <ul class="c8 lst-kix_list_8-0 start">
+            <li class="c0 li-bullet-0"><span class="c6">Having a lot of time (more than the age of the universe), it
+                    would
+                    be possible to brute-force attack the D-H system to find the exponents (Alice and Bob&#39;s private
+                    colors).</span></li>
+            <li class="c0 li-bullet-0"><span class="c6">More: so far, no one has found an efficient way (i.e., smarter
+                    than
+                    brute-force) to compute the exponents, but that doesn&#39;t mean that no one will be able to do it
+                    in
+                    the future (although it is considered unlikely) or that new systems (such as quantum computers)
+                    won&#39;t be able to solve this math problem in a reasonable amount of time.</span></li>
+        </ul>
+        <p class="c2"><span>This is an example of &ldquo;computational safety:&rdquo; safety is not absolute (i.e.,
+                mathematically provable) but depends on the </span><span class="c1">[ </span><span
+                class="c4 c1">ease</span><span class="c1">&nbsp;| </span><span class="c5">difficulty </span><span
+                class="c1">] </span><span class="c6">for computers of solving certain mathematical problems.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>In addition, the Diffie-Hellmann key exchange suffers from a problem: an adversary can
+            </span><span class="c1">[ </span><span class="c5">pretend to be one of the two parties and participate in
+                the
+                key exchange </span><span class="c1">| </span><span class="c4 c1">get the secret key by listening to
+                public
+                communications</span><span class="c1">&nbsp;]</span><span class="c6">&nbsp;and then join in subsequent
+                secret communications without the other party ever noticing. This type of attack is called a &ldquo;man
+                in
+                the middle&rdquo; attack.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">One solution is the so-called &ldquo;public-key&rdquo; or
+                &ldquo;asymmetric&rdquo;
+                cryptography. There is a very special pair of keys in this cryptography, called public key (since it is
+                known to everyone) and private key (since the owner keeps it secret from everyone).</span></p>
+        <p class="c2"><span class="c6">Properties of asymmetric keys:</span></p>
+        <ul class="c8 lst-kix_list_10-0 start">
+            <li class="c0 li-bullet-0"><span>if I encrypt with the private key, I can only decrypt with the </span><span
+                    class="c1">[ </span><span class="c4 c1">private</span><span class="c1">&nbsp;| </span><span
+                    class="c5">public </span><span class="c1">] </span><span class="c6">key;</span></li>
+            <li class="c0 li-bullet-0"><span>if I encrypt with the public key, I can only decrypt with the </span><span
+                    class="c1">[ </span><span class="c5">private </span><span class="c1">| </span><span
+                    class="c4 c1">public</span><span class="c1">&nbsp;] </span><span class="c6">key.</span></li>
+        </ul>
+        <p class="c2"><span class="c6">The keys are mathematically bound, but having only the public key, it is
+                (computationally) impossible to trace the private key.</span></p>
+        <p class="c2"><span>This works based on so-called one-way functions: easy to compute but hard to reverse, unless
+                you
+                know a secret. For example, it is </span><span class="c1">[ </span><span class="c5">easy </span><span
+                class="c1">| </span><span class="c4 c1">difficult</span><span class="c1">&nbsp;]
+            </span><span>to</span><span class="c1">&nbsp;</span><span>multiply two very big prime numbers, but it is
+            </span><span class="c1">[
+            </span><span class="c4 c1">easy</span><span class="c1">&nbsp;| </span><span class="c5">difficult
+            </span><span class="c1">] </span><span>to</span><span class="c1">&nbsp;</span><span class="c6">decompose a
+                very big
+                number into its prime factors.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>It is possible to overcome the Diffie-Hellman weakness (&ldquo;man in the middle&rdquo;) by
+                using the properties of asymmetric keys. In other words, it is possible to guarantee </span><span
+                class="c1">[ </span><span class="c5">the authenticity </span><span class="c1">| </span><span
+                class="c4 c1">the secrecy</span><span class="c1">&nbsp;]</span><span class="c6">&nbsp;of a
+                message.</span>
+        </p>
+        <p class="c2"><span class="c6">The sender encrypts the message with his private key, the receiver decrypts it
+                with
+                the sender&#39;s public key, and then it is certain that it was that sender who encrypted and sent the
+                message. In fact, it would be impossible to decrypt that message if it had been encrypted by another
+                sender
+                (with his secret key).</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span>At the same time, thanks again to the properties of asymmetric keys, it is possible to
+                exchange
+                a secret message </span><span class="c1">[ </span><span class="c4 c1">by simply exchanging a secret key
+                first</span><span class="c1">&nbsp;| </span><span class="c5">without first exchanging a secret key
+            </span><span class="c1">]</span><span>.</span><span class="c1">&nbsp;</span><span class="c6">The sender
+                encrypts
+                the message with the recipient&#39;s public key. At that point, the message can only be decrypted with
+                the
+                recipient&#39;s private key, which is undoubtedly known only to him.</span></p>
+        <p class="c2 c7"><span class="c6"></span></p>
+        <p class="c2"><span class="c6">Public-key systems (&ldquo;asymmetric&rdquo;) require demanding calculations for
+                the
+                computers implementing them. Therefore, in practice, a mix of the presented systems is used:</span></p>
+        <ul class="c8 lst-kix_list_7-0 start">
+            <li class="c0 li-bullet-0"><span class="c6">a public-key system is used to be sure of the identity of the
+                    two
+                    parties exchanging messages;</span></li>
+            <li class="c0 li-bullet-0"><span>Diffie-Hellman key exchange is used </span><span class="c12">to generate a
+                    shared secret key securely;</span></li>
+            <li class="c0 li-bullet-0"><span class="c12">the shared secret key is used to communicate via symmetric
+                    (i.e.,
+                    secret-key) encryption systems, such as AES, which are the fastest and most efficient.</span></li>
+        </ul>
+        <div>
+            <p class="c7 c17"><span class="c20"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>

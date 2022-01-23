@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--[if IE ]>
+  <style>
+    #siscript {display:none;}
+  </style>
+<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Cryptography in Grade 10: Core Ideas with Snap! and Unplugged</title>
+    <script>
+        function myFunction(e) {
+            if (e.innerHTML == "Hide") e.innerHTML = "Show";
+            else e.innerHTML = "Hide";
+
+            var x = document.getElementById(e.id + "_frame");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cryptography in Grade 10: Core Ideas with Snap! and Unplugged<br>- <a href="index.html">Auxiliary material</a> - </h1>
+
+    <p style="color:red"><i>This webpage requires a modern browser. <br>If you experience problems, you can find <a
+        href="static.html">a static page with all the materials here.</a></i></p>
+
+
+    <script>
+        $(document).ready(function () {
+            if (navigator.userAgent.match(/msie|trident/i)) {
+                $('#siscript').hide();
+            }
+        });
+
+    </script>
+
+    <noscript>
+        <h2>Animated slides</h2>
+        <ul>
+            <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSLqvkGOcBo9iSdx9uEx5UShxxAzmY43V2RKStwDiVN4nR5CWZn43JZ2kBCJY_RN3ky7itQ-IvkESfx/pub?start=true&loop=true&delayms=1000"
+                    target="_blank">The Diffie-Hellman key exchange with colors</a></li>
+            <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRpVcuvPk_eXWg66VJvegW1hMKz1CSR93f17EmukvWlzf0fRy9bZ1wxSuAX2a5Y_ZGVM8OGWa4c0Chv/pub?start=true&loop=true&delayms=1000"
+                    target="_blank">The Diffie-Hellman key exchange with colors and numbers</a></li>
+            <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSWGXTVw2rUuUqeb1bxno6DOeX6YHHk_xUMJi2WP1WM8IJlKggKNOq7RHM5bKIzVydwG6l4dd-Y15oJ/pub?start=true&loop=true&delayms=2500"
+                    target="_blank">Authentication and Secrecy through asymmetric cryptography</a></li>
+        </ul>
+
+        <style>
+            #siscript {
+                display: none;
+            }
+        </style>
+    </noscript>
+
+    <div id="siscript">
+        <h2>Animated slides (in loop)</h2>
+
+        <h3>The Diffie-Hellman key exchange with colors <button id="1" onclick="myFunction(this)">Hide</button> </h3>
+
+        <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSLqvkGOcBo9iSdx9uEx5UShxxAzmY43V2RKStwDiVN4nR5CWZn43JZ2kBCJY_RN3ky7itQ-IvkESfx/embed?start=true&loop=true&delayms=1000"
+            frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+            webkitallowfullscreen="true" id="1_frame">Slides not loaded correctly.</iframe>
+
+        <hr>
+
+        <h3>The Diffie-Hellman key exchange with colors and numbers <button id="2"
+                onclick="myFunction(this)">Hide</button></h3>
+
+        <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vRpVcuvPk_eXWg66VJvegW1hMKz1CSR93f17EmukvWlzf0fRy9bZ1wxSuAX2a5Y_ZGVM8OGWa4c0Chv/embed?start=true&loop=true&delayms=1000"
+            frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+            webkitallowfullscreen="true" id="2_frame">Slides not loaded correctly.</iframe>
+
+        <hr>
+        <h3>Authentication and Secrecy through asymmetric cryptography <button id="3"
+                onclick="myFunction(this)">Hide</button></h3>
+
+        <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSWGXTVw2rUuUqeb1bxno6DOeX6YHHk_xUMJi2WP1WM8IJlKggKNOq7RHM5bKIzVydwG6l4dd-Y15oJ/embed?start=true&loop=true&delayms=2500"
+            frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+            webkitallowfullscreen="true" id="3_frame">Slides not loaded correctly.</iframe>
+
+    </div>
+</body>
+
+</html>
